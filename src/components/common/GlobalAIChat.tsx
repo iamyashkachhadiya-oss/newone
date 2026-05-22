@@ -470,67 +470,99 @@ function TypingDots() {
 // ─── Orb FAB ─────────────────────────────────────────────────────────────────
 function OrbButton({ onClick, warnings }: { onClick: () => void; warnings: DesignWarning[]; side: 'left' | 'right' }) {
   const [showWelcome, setShowWelcome] = useState(false)
+  const [hovered, setHovered] = useState(false)
   
   useEffect(() => {
-    const showTimer = setTimeout(() => setShowWelcome(true), 1200)
-    const hideTimer = setTimeout(() => setShowWelcome(false), 5000)
+    const showTimer = setTimeout(() => setShowWelcome(true), 1400)
+    const hideTimer = setTimeout(() => setShowWelcome(false), 6000)
     return () => { clearTimeout(showTimer); clearTimeout(hideTimer) }
   }, [])
 
   return (
-    <div style={{ position: 'fixed', top: 24, left: '50%', transform: 'translate(75px, -50%)', zIndex: 9998, display: 'flex', alignItems: 'center' }}>
+    <div style={{ position: 'fixed', bottom: 28, right: 28, zIndex: 9998 }}>
       <style>{`
         @keyframes aiCorePulse {
-          0% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.3); }
-          70% { box-shadow: 0 0 0 8px rgba(124, 58, 237, 0); }
-          100% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0); }
+          0%   { box-shadow: 0 0 0 0 rgba(224,17,95,0.4), 0 8px 32px rgba(0,0,0,0.3); }
+          70%  { box-shadow: 0 0 0 14px rgba(224,17,95,0), 0 8px 32px rgba(0,0,0,0.3); }
+          100% { box-shadow: 0 0 0 0 rgba(224,17,95,0), 0 8px 32px rgba(0,0,0,0.3); }
         }
         @keyframes aiRingSpin {
           from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
+          to   { transform: rotate(360deg); }
         }
-        @keyframes popupFadeIn {
-          from { opacity: 0; transform: translate(-50%, 10px) scale(0.95); }
-          to { opacity: 1; transform: translate(-50%, 0) scale(1); }
+        @keyframes orbWelcomeFadeIn {
+          from { opacity: 0; transform: translateY(8px) scale(0.95); }
+          to   { opacity: 1; transform: translateY(0) scale(1); }
         }
+        @keyframes orbFloat {
+          0%, 100% { transform: translateY(0px); }
+          50%       { transform: translateY(-4px); }
+        }
+        .orb-fab {
+          width: 56px; height: 56px; border-radius: 50%; border: none; cursor: pointer;
+          background: linear-gradient(135deg, #1a0a2e 0%, #0f172a 50%, #1e0a3c 100%);
+          display: flex; align-items: center; justify-content: center;
+          position: relative; overflow: visible;
+          transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s;
+          animation: aiCorePulse 2.8s ease-out infinite;
+        }
+        .orb-fab:hover {
+          transform: scale(1.1) translateY(-2px) !important;
+          box-shadow: 0 12px 40px rgba(224,17,95,0.5), 0 4px 16px rgba(0,0,0,0.3) !important;
+        }
+        .orb-fab:active { transform: scale(0.96) !important; }
       `}</style>
-      
-      <button onClick={() => { onClick(); setShowWelcome(false); }} title="Open AI Studio (⌘J)" 
-        style={{ 
-          width: 36, height: 36, borderRadius: '50%', border: 'none', cursor: 'pointer', 
-          background: 'linear-gradient(135deg, #0f172a, #1e1b4b)', 
-          display: 'flex', alignItems: 'center', justifyContent: 'center', 
-          position: 'relative', overflow: 'hidden', 
-          transition: 'all 0.2s', 
-          boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
-          animation: 'aiCorePulse 2.5s infinite'
-        }}
-        onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.1)'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(124,58,237,0.3)' }}
-        onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)' }}
-      >
-        <div style={{ position: 'absolute', inset: 2, borderRadius: '50%', border: '1.5px dashed rgba(56,189,248,0.5)', borderTopColor: '#E0115F', animation: 'aiRingSpin 6s linear infinite' }} />
-        <div style={{ position: 'absolute', inset: 5, borderRadius: '50%', border: '1px solid rgba(124,58,237,0.5)', borderLeftColor: '#38bdf8', animation: 'aiRingSpin 3s linear infinite reverse' }} />
-        <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#fff', boxShadow: '0 0 8px 3px #38bdf8, 0 0 12px #E0115F' }} />
-      </button>
 
-      {warnings.length > 0 && (
-        <div style={{ position: 'absolute', top: -4, right: -4, width: 14, height: 14, background: '#FF3B30', borderRadius: '50%', border: '1.5px solid #fff', fontSize: 8, fontWeight: 800, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>{warnings.length}</div>
+      {/* Tooltip above */}
+      {(showWelcome || hovered) && (
+        <div
+          onClick={() => { onClick(); setShowWelcome(false) }}
+          style={{
+            position: 'absolute', bottom: 68, right: 0,
+            background: 'linear-gradient(135deg, #0f0f1a, #1a0f2e)',
+            color: '#fff',
+            padding: '13px 16px', borderRadius: 14, width: 230,
+            fontSize: 12, lineHeight: 1.6, fontWeight: 500,
+            border: '1px solid rgba(255,255,255,0.1)',
+            boxShadow: '0 16px 48px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.04) inset',
+            animation: 'orbWelcomeFadeIn 0.35s cubic-bezier(0.16,1,0.3,1) forwards',
+            cursor: 'pointer',
+          }}
+        >
+          {/* caret */}
+          <div style={{ position: 'absolute', bottom: -6, right: 22, width: 0, height: 0, borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderTop: '6px solid #1a0f2e' }} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 6 }}>
+            <div style={{ width: 18, height: 18, borderRadius: 6, background: 'linear-gradient(135deg, #E0115F, #7c3aed)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+              <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span style={{ color: '#38bdf8', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: 9 }}>Design Assistant · Jarvis</span>
+          </div>
+          <div style={{ color: 'rgba(255,255,255,0.8)', fontSize: 12 }}>Let&rsquo;s make some crazy fabric designs together! ✦</div>
+          <div style={{ marginTop: 8, display: 'flex', alignItems: 'center', gap: 5 }}>
+            <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)' }}>Press</span>
+            <span style={{ fontSize: 10, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 4, padding: '1px 5px', color: 'rgba(255,255,255,0.5)', fontFamily: 'monospace' }}>⌘J</span>
+            <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)' }}>to open anytime</span>
+          </div>
+        </div>
       )}
 
-      {showWelcome && (
-        <div style={{
-          position: 'absolute', top: 42, left: '50%', transform: 'translateX(-50%)',
-          background: 'linear-gradient(135deg, #111, #1a1a1a)', color: '#fff',
-          padding: '12px 16px', borderRadius: 12, width: 220,
-          fontSize: 12, lineHeight: 1.5, fontWeight: 500,
-          boxShadow: '0 8px 30px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.08)',
-          animation: 'popupFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-          textAlign: 'center', cursor: 'pointer'
-        }} onClick={() => { onClick(); setShowWelcome(false); }}>
-          <div style={{ position: 'absolute', top: -6, left: '50%', transform: 'translateX(-50%)', width: 0, height: 0, borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderBottom: '6px solid #111' }} />
-          <span style={{ color: '#38bdf8', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', fontSize: 10 }}>I am your personal Jarvis</span><br/>
-          Let's make some crazy designs together!
-        </div>
+      <button
+        className="orb-fab"
+        onClick={() => { onClick(); setShowWelcome(false) }}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        title="Open AI Design Assistant (⌘J)"
+      >
+        {/* Spinning rings */}
+        <div style={{ position: 'absolute', inset: 3, borderRadius: '50%', border: '1.5px dashed rgba(56,189,248,0.45)', borderTopColor: '#E0115F', animation: 'aiRingSpin 5s linear infinite' }} />
+        <div style={{ position: 'absolute', inset: 7, borderRadius: '50%', border: '1px solid rgba(124,58,237,0.45)', borderLeftColor: '#38bdf8', animation: 'aiRingSpin 3s linear infinite reverse' }} />
+        {/* Core glow */}
+        <div style={{ width: 14, height: 14, borderRadius: '50%', background: 'radial-gradient(circle, #fff 30%, #38bdf8 70%)', boxShadow: '0 0 10px 4px rgba(56,189,248,0.6), 0 0 18px rgba(224,17,95,0.5)', position: 'relative', zIndex: 1 }} />
+      </button>
+
+      {/* Warning badge */}
+      {warnings.length > 0 && (
+        <div style={{ position: 'absolute', top: -3, right: -3, width: 18, height: 18, background: '#FF3B30', borderRadius: '50%', border: '2px solid #fff', fontSize: 9, fontWeight: 800, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10, boxShadow: '0 2px 8px rgba(255,59,48,0.4)' }}>{warnings.length}</div>
       )}
     </div>
   )
