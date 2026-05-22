@@ -1,0 +1,2300 @@
+{
+  "dataset_metadata": {
+    "name": "Comprehensive Textile Design Library",
+    "version": "1.0",
+    "created_date": "2024-04-12",
+    "total_designs": 87,
+    "categories": 6,
+    "description": "Complete taxonomy of textile designs from basic weaves to complex jacquard patterns, formatted for AI-driven design generation and recommendations",
+    "dataset_structure": "Hierarchical design taxonomy with complete technical specifications, market positioning, and production data",
+    "api_compatibility": "Claude API, REST endpoints, design generation engines"
+  },
+  
+  "designs": {
+    "basic_weaves": {
+      "category": "1. BASIC WEAVES (Foundation Layer)",
+      "description": "Foundational weave structures that form the basis of all textiles",
+      "designs": [
+        {
+          "design_id": "BW_001_PLAIN_1x1",
+          "design_name": "1x1 Plain Weave",
+          "category": "Basic Weaves",
+          "subcategory": "Plain Weave",
+          "description": "The fundamental weaving pattern where each warp thread alternates over and under consecutive weft threads, creating the simplest and most versatile textile structure.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave",
+            "base_structure": "Basic 1x1 alternation",
+            "peg_matrix": {
+              "description": "Simplest binary 1/0 alternating pattern",
+              "width_ends": 2,
+              "height_picks": 2,
+              "matrix": [[1, 0], [0, 1]]
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Alternating (straight draft)",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "20-200+ epi (varies by application)",
+              "weft_density": "20-200+ ppi (varies by application)"
+            },
+            "yarn_requirements": {
+              "warp": "Any yarn type - cotton, wool, silk, synthetic, blends",
+              "weft": "Any yarn type - cotton, wool, silk, synthetic, blends"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.1,
+              "vertical_inches": 0.1
+            },
+            "color_palette": ["unlimited - monochrome to multi-color"],
+            "texture_profile": ["smooth", "flat"],
+            "visual_characteristics": ["neutral", "minimal", "versatile"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["foundational", "timeless", "universal"],
+            "seasonal_relevance": ["all-season"],
+            "market_segment": ["all segments"],
+            "price_tier": "entry to premium",
+            "production_complexity": "low"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor", "technical-textiles"],
+            "specific_applications": ["basic shirting", "lining", "cotton basics", "canvas", "muslin", "poplin"],
+            "garment_types": ["shirts", "blouses", "casual wear", "undergarments", "lightweight jackets"],
+            "fabric_hand": "flat, smooth, versatile"
+          },
+          "production_data": {
+            "estimated_production_time": "1-2 hours per 10 yards",
+            "thread_waste_percentage": 3,
+            "setup_time_minutes": 15,
+            "minimum_yardage": 10,
+            "cost_index": 1.0
+          },
+          "performance_metrics": {
+            "durability_rating": 7,
+            "wrinkle_resistance": 5,
+            "breathability": 8,
+            "stretch_factor": 1,
+            "care_complexity": "low"
+          },
+          "contextual_metadata": {
+            "created_date": "Ancient origin",
+            "designer_notes": "The most fundamental weave structure. Adaptable to virtually any fiber and weight.",
+            "inspiration_source": "Archaeological evidence",
+            "cultural_origin": "Universal",
+            "sustainability_score": 10,
+            "digital_trends": ["evergreen", "foundational", "universal"]
+          },
+          "variations_available": [
+            {"variation_name": "Dense Plain", "description": "200+ epi/ppi for fine shirting"},
+            {"variation_name": "Loose Plain", "description": "20-40 epi/ppi for casual cottons"},
+            {"variation_name": "Mixed Fiber Plain", "description": "Warp and weft in different fibers"}
+          ]
+        },
+
+        {
+          "design_id": "BW_002_RIB_WARP",
+          "design_name": "Warp Rib",
+          "category": "Basic Weaves",
+          "subcategory": "Plain Weave - Rib",
+          "description": "Plain weave variation where multiple warp threads are grouped together, creating prominent vertical ridges or ribs.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave - Rib",
+            "base_structure": "Multiple warp ends with single weft",
+            "peg_matrix": {
+              "description": "2x2 or 4x2 pattern showing grouped warp interlace",
+              "width_ends": 4,
+              "height_picks": 2,
+              "matrix": [[1, 1, 0, 0], [0, 0, 1, 1]]
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Paired straight draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "40-100 epi",
+              "weft_density": "30-80 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Fine to medium weight - cotton, wool, silk, or blends",
+              "weft": "Medium to coarse weight - often thicker than warp"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.25,
+              "vertical_inches": 0.15
+            },
+            "color_palette": ["white", "cream", "grey", "navy", "black", "earth-tones"],
+            "texture_profile": ["textured", "dimensional", "pronounced ridges"],
+            "visual_characteristics": ["geometric", "structured", "linear"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["structured", "tactile", "textured", "classic"],
+            "seasonal_relevance": ["spring", "summer", "fall"],
+            "market_segment": ["contemporary", "casual", "technical"],
+            "price_tier": "entry to mid",
+            "production_complexity": "low"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor"],
+            "specific_applications": ["casual shirting", "dress shirts", "suiting", "polo shirts", "casual trousers"],
+            "garment_types": ["shirts", "blouses", "knit-inspired wovens", "light jackets"],
+            "fabric_hand": "textured, crisp, structured"
+          },
+          "production_data": {
+            "estimated_production_time": "2 hours per 10 yards",
+            "thread_waste_percentage": 4,
+            "setup_time_minutes": 20,
+            "minimum_yardage": 15,
+            "cost_index": 1.05
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 7,
+            "breathability": 7,
+            "stretch_factor": 2,
+            "care_complexity": "low"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional - centuries old",
+            "designer_notes": "Grouped warp creates visual interest while maintaining plain weave simplicity",
+            "inspiration_source": "European shirting tradition",
+            "cultural_origin": "European - UK and Germany",
+            "sustainability_score": 9,
+            "digital_trends": ["classic", "evergreen", "professional"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Warp Rib (Micro-Rib)", "description": "2x2 grouping"},
+            {"variation_name": "Medium Warp Rib", "description": "4x4 grouping"},
+            {"variation_name": "Coarse Warp Rib", "description": "8x8+ grouping"},
+            {"variation_name": "Multi-Color Warp Rib", "description": "Striped effect"}
+          ]
+        },
+
+        {
+          "design_id": "BW_003_RIB_WEFT",
+          "design_name": "Weft Rib",
+          "category": "Basic Weaves",
+          "subcategory": "Plain Weave - Rib",
+          "description": "Plain weave variation where multiple weft threads are grouped together, creating prominent horizontal ridges or ribs.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave - Rib",
+            "base_structure": "Single warp with multiple weft ends grouped",
+            "peg_matrix": {
+              "description": "2x2 or 2x4 pattern showing grouped weft interlace",
+              "width_ends": 2,
+              "height_picks": 4,
+              "matrix": [[1, 0], [1, 0], [0, 1], [0, 1]]
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Standard straight draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "30-80 epi",
+              "weft_density": "40-100 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium to coarse weight",
+              "weft": "Fine to medium weight - often thinner than warp"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.15,
+              "vertical_inches": 0.25
+            },
+            "color_palette": ["white", "cream", "grey", "navy", "black", "burgundy", "terracotta"],
+            "texture_profile": ["textured", "dimensional", "horizontal lines"],
+            "visual_characteristics": ["geometric", "structured", "horizontal emphasis"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["structured", "tactile", "cozy"],
+            "seasonal_relevance": ["fall", "winter", "all-season"],
+            "market_segment": ["contemporary", "casual", "heritage"],
+            "price_tier": "entry to mid",
+            "production_complexity": "low"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor"],
+            "specific_applications": ["casual shirting", "corduroy base", "loungewear", "blankets", "upholstery"],
+            "garment_types": ["casual shirts", "knitwear look-alikes", "cardigans", "home textiles"],
+            "fabric_hand": "soft, textured, cozy"
+          },
+          "production_data": {
+            "estimated_production_time": "2-2.5 hours per 10 yards",
+            "thread_waste_percentage": 4,
+            "setup_time_minutes": 20,
+            "minimum_yardage": 15,
+            "cost_index": 1.05
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 6,
+            "breathability": 6,
+            "stretch_factor": 3,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional - centuries old",
+            "designer_notes": "Weft rib creates softer, more casual appearance than warp rib",
+            "inspiration_source": "Japanese and European weaving",
+            "cultural_origin": "European and Asian traditions",
+            "sustainability_score": 8,
+            "digital_trends": ["cozy", "casual", "relaxed-luxury"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Weft Rib", "description": "2x2 grouping"},
+            {"variation_name": "Medium Weft Rib", "description": "2x4 grouping"},
+            {"variation_name": "Heavy Weft Rib", "description": "2x6+ grouping"},
+            {"variation_name": "Color-Blocked Weft Rib", "description": "Striped effect"}
+          ]
+        },
+
+        {
+          "design_id": "BW_004_RIB_UNEVEN",
+          "design_name": "Uneven Rib",
+          "category": "Basic Weaves",
+          "subcategory": "Plain Weave - Rib",
+          "description": "Plain weave rib with unequal grouping - alternating between different sized rib widths for visual rhythm.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave - Rib",
+            "base_structure": "Irregular grouped threads",
+            "peg_matrix": {
+              "description": "Alternating unequal groupings",
+              "width_ends": 6,
+              "height_picks": 2,
+              "matrix": [[1, 1, 0, 0, 0, 0], [0, 0, 1, 1, 1, 1]]
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Modified straight draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "40-120 epi",
+              "weft_density": "30-100 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight",
+              "weft": "Medium weight - can vary between groups"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.4,
+              "vertical_inches": 0.2
+            },
+            "color_palette": ["cream", "grey", "white", "navy", "charcoal", "natural", "earth-tones"],
+            "texture_profile": ["textured", "dimensional", "irregular rhythm"],
+            "visual_characteristics": ["geometric", "sophisticated", "dynamic"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["sophisticated", "contemporary", "artisanal", "premium"],
+            "seasonal_relevance": ["spring", "fall", "all-season"],
+            "market_segment": ["contemporary", "luxury", "designer"],
+            "price_tier": "mid to premium",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor"],
+            "specific_applications": ["designer shirting", "luxury casual", "artistic garments", "high-end home textiles"],
+            "garment_types": ["designer shirts", "statement blouses", "contemporary jackets", "home furnishings"],
+            "fabric_hand": "textured, sophisticated, premium"
+          },
+          "production_data": {
+            "estimated_production_time": "2.5-3 hours per 10 yards",
+            "thread_waste_percentage": 5,
+            "setup_time_minutes": 30,
+            "minimum_yardage": 20,
+            "cost_index": 1.15
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 6,
+            "breathability": 7,
+            "stretch_factor": 2,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Modern interpretation",
+            "designer_notes": "Creates sophisticated visual rhythm while maintaining plain weave simplicity",
+            "inspiration_source": "Contemporary textile design",
+            "cultural_origin": "Modern design innovation",
+            "sustainability_score": 8,
+            "digital_trends": ["contemporary", "designer", "artistic"]
+          },
+          "variations_available": [
+            {"variation_name": "3x1 Uneven Rib", "description": "Subtle variation"},
+            {"variation_name": "2x4 Uneven Rib", "description": "Pronounced rhythm"},
+            {"variation_name": "Complex Uneven", "description": "Multiple group sizes"},
+            {"variation_name": "Tonal Uneven Rib", "description": "Color rhythm"}
+          ]
+        },
+
+        {
+          "design_id": "BW_005_BASKET_2x2",
+          "design_name": "2x2 Basket Weave",
+          "category": "Basic Weaves",
+          "subcategory": "Plain Weave - Basket",
+          "description": "Pairs of warp threads interlace with pairs of weft threads in synchronized pattern, creating checkerboard-like surface.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave - Basket",
+            "base_structure": "2x2 paired thread interlace",
+            "peg_matrix": {
+              "description": "Binary pattern with 2-thread groups",
+              "width_ends": 4,
+              "height_picks": 4,
+              "matrix": [[1, 1, 0, 0], [1, 1, 0, 0], [0, 0, 1, 1], [0, 0, 1, 1]]
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Paired straight draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "40-80 epi",
+              "weft_density": "40-80 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight",
+              "weft": "Medium weight - should match warp"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.25,
+              "vertical_inches": 0.25
+            },
+            "color_palette": ["white", "cream", "beige", "grey", "navy", "black", "natural linen", "multi-color"],
+            "texture_profile": ["textured", "dimensional", "grid-like"],
+            "visual_characteristics": ["geometric", "structured", "balanced"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["classic", "timeless", "versatile", "casual-chic"],
+            "seasonal_relevance": ["spring", "summer", "all-season"],
+            "market_segment": ["contemporary", "casual", "lifestyle"],
+            "price_tier": "entry to mid",
+            "production_complexity": "low"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor"],
+            "specific_applications": ["casual shirting", "linen wear", "summer apparel", "throws", "upholstery"],
+            "garment_types": ["casual shirts", "blouses", "summer jackets", "home textiles", "accessories"],
+            "fabric_hand": "textured, casual, slightly structured"
+          },
+          "production_data": {
+            "estimated_production_time": "2-2.5 hours per 10 yards",
+            "thread_waste_percentage": 4,
+            "setup_time_minutes": 20,
+            "minimum_yardage": 15,
+            "cost_index": 1.08
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 6,
+            "breathability": 8,
+            "stretch_factor": 2,
+            "care_complexity": "low"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional - widely used",
+            "designer_notes": "Perfect balance between simplicity and visual interest",
+            "inspiration_source": "European weaving",
+            "cultural_origin": "Universal",
+            "sustainability_score": 9,
+            "digital_trends": ["casual", "evergreen", "versatile"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine 2x2 Basket", "description": "High thread count"},
+            {"variation_name": "Loose 2x2 Basket", "description": "Lower thread count"},
+            {"variation_name": "Two-Tone Basket", "description": "Alternating colors"},
+            {"variation_name": "Mixed Fiber Basket", "description": "Different fibers"}
+          ]
+        },
+
+        {
+          "design_id": "BW_006_BASKET_3x3",
+          "design_name": "3x3 Basket Weave",
+          "category": "Basic Weaves",
+          "subcategory": "Plain Weave - Basket",
+          "description": "Triplets of warp and weft threads interlace in synchronized pattern, creating larger checkerboard squares with pronounced texture.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave - Basket",
+            "base_structure": "3x3 grouped thread interlace",
+            "peg_matrix": {
+              "width_ends": 6,
+              "height_picks": 6,
+              "matrix": [[1,1,1,0,0,0],[1,1,1,0,0,0],[1,1,1,0,0,0],[0,0,0,1,1,1],[0,0,0,1,1,1],[0,0,0,1,1,1]]
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Grouped straight draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "40-80 epi",
+              "weft_density": "40-80 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium to coarse weight",
+              "weft": "Medium to coarse weight"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.4,
+              "vertical_inches": 0.4
+            },
+            "color_palette": ["natural", "cream", "grey", "navy", "two-tone", "multi-color"],
+            "texture_profile": ["textured", "dimensional", "pronounced grid"],
+            "visual_characteristics": ["geometric", "bold", "structured"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["statement", "textured", "artistic"],
+            "seasonal_relevance": ["spring", "summer", "fall"],
+            "market_segment": ["contemporary", "artistic", "lifestyle"],
+            "price_tier": "mid",
+            "production_complexity": "low"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor", "upholstery"],
+            "specific_applications": ["statement wear", "outdoor textiles", "upholstery", "throws", "artistic garments"],
+            "garment_types": ["statement jackets", "artistic wear", "home furnishings"],
+            "fabric_hand": "textured, bold, structured"
+          },
+          "production_data": {
+            "estimated_production_time": "2.5 hours per 10 yards",
+            "thread_waste_percentage": 5,
+            "setup_time_minutes": 25,
+            "minimum_yardage": 20,
+            "cost_index": 1.1
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 7,
+            "breathability": 7,
+            "stretch_factor": 2,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional variation",
+            "designer_notes": "Larger grid creates more pronounced visual impact",
+            "inspiration_source": "European weaving traditions",
+            "cultural_origin": "Multi-cultural",
+            "sustainability_score": 8,
+            "digital_trends": ["statement", "artistic", "bold"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine 3x3 Basket", "description": "Refined appearance"},
+            {"variation_name": "Coarse 3x3 Basket", "description": "Open weave"},
+            {"variation_name": "Striped 3x3", "description": "Alternating colors"}
+          ]
+        },
+
+        {
+          "design_id": "BW_007_BASKET_4x4",
+          "design_name": "4x4 Basket Weave",
+          "category": "Basic Weaves",
+          "subcategory": "Plain Weave - Basket",
+          "description": "Quadruplets of warp and weft threads interlace, creating bold checkerboard pattern with strong dimensional quality.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave - Basket",
+            "base_structure": "4x4 grouped thread interlace",
+            "peg_matrix": {
+              "width_ends": 8,
+              "height_picks": 8
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Grouped straight draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "35-70 epi",
+              "weft_density": "35-70 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium to coarse weight",
+              "weft": "Medium to coarse weight"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.5,
+              "vertical_inches": 0.5
+            },
+            "color_palette": ["natural", "cream", "grey", "navy", "brown", "multi-color combinations"],
+            "texture_profile": ["heavily textured", "bold dimensionality", "pronounced"],
+            "visual_characteristics": ["geometric", "bold", "dramatic"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["statement", "bold", "artistic", "contemporary"],
+            "seasonal_relevance": ["spring", "fall", "winter"],
+            "market_segment": ["contemporary", "artistic", "premium"],
+            "price_tier": "mid to premium",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor", "upholstery"],
+            "specific_applications": ["statement jackets", "artistic wear", "heavy upholstery", "throws", "wall hangings"],
+            "garment_types": ["statement outerwear", "artistic garments", "home furnishings"],
+            "fabric_hand": "bold, textured, structured"
+          },
+          "production_data": {
+            "estimated_production_time": "3 hours per 10 yards",
+            "thread_waste_percentage": 6,
+            "setup_time_minutes": 30,
+            "minimum_yardage": 25,
+            "cost_index": 1.15
+          },
+          "performance_metrics": {
+            "durability_rating": 9,
+            "wrinkle_resistance": 7,
+            "breathability": 6,
+            "stretch_factor": 1,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional variation",
+            "designer_notes": "Strong dimensional quality makes this excellent for statement pieces",
+            "inspiration_source": "European textile traditions",
+            "cultural_origin": "Multi-cultural",
+            "sustainability_score": 7,
+            "digital_trends": ["bold", "statement", "artistic"]
+          },
+          "variations_available": [
+            {"variation_name": "Natural 4x4", "description": "Undyed linen or cotton"},
+            {"variation_name": "Solid Color 4x4", "description": "Single color statement"},
+            {"variation_name": "Contrast 4x4", "description": "High contrast alternating colors"}
+          ]
+        },
+
+        {
+          "design_id": "BW_008_BASKET_IRREGULAR",
+          "design_name": "Irregular Basket Weave",
+          "category": "Basic Weaves",
+          "subcategory": "Plain Weave - Basket",
+          "description": "Basket weave with variable grouping sizes, creating asymmetrical checkerboard pattern with visual intrigue.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave - Basket",
+            "base_structure": "Variable grouped thread interlace",
+            "peg_matrix": {
+              "width_ends": 7,
+              "height_picks": 7,
+              "description": "Irregular grouping pattern - 2x3x2, varied height"
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Modified straight draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "40-90 epi",
+              "weft_density": "40-90 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight",
+              "weft": "Medium weight"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.45,
+              "vertical_inches": 0.45
+            },
+            "color_palette": ["natural", "cream", "grey", "earth-tones", "multi-color"],
+            "texture_profile": ["textured", "dimensional", "irregular rhythm"],
+            "visual_characteristics": ["geometric", "artistic", "dynamic"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["artistic", "contemporary", "unique", "handcrafted-feel"],
+            "seasonal_relevance": ["spring", "fall", "all-season"],
+            "market_segment": ["contemporary", "designer", "artistic"],
+            "price_tier": "mid to premium",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor"],
+            "specific_applications": ["designer wear", "artistic textiles", "artistic upholstery", "decorative throws"],
+            "garment_types": ["designer jackets", "artistic wear", "home furnishings"],
+            "fabric_hand": "textured, unique, artistic"
+          },
+          "production_data": {
+            "estimated_production_time": "3 hours per 10 yards",
+            "thread_waste_percentage": 7,
+            "setup_time_minutes": 35,
+            "minimum_yardage": 25,
+            "cost_index": 1.2
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 6,
+            "breathability": 7,
+            "stretch_factor": 2,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Modern artistic design",
+            "designer_notes": "Irregular grouping creates unique visual rhythm - no two pieces identical",
+            "inspiration_source": "Contemporary artistic weaving",
+            "cultural_origin": "Modern design innovation",
+            "sustainability_score": 8,
+            "digital_trends": ["unique", "artistic", "contemporary"]
+          },
+          "variations_available": [
+            {"variation_name": "Asymmetrical Irregular", "description": "Completely unique patterns"},
+            {"variation_name": "Controlled Irregular", "description": "Repeating irregular sequence"},
+            {"variation_name": "Color-Varied Irregular", "description": "Different colors in groups"}
+          ]
+        },
+
+        {
+          "design_id": "BW_009_MATT_WEAVE",
+          "design_name": "Matt Weave",
+          "category": "Basic Weaves",
+          "subcategory": "Plain Weave - Matt",
+          "description": "Plain weave variation with balanced warp and weft creating matte surface finish with uniform appearance.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave - Matt",
+            "base_structure": "Balanced plain interlace",
+            "peg_matrix": {
+              "width_ends": 2,
+              "height_picks": 2,
+              "matrix": [[1, 0], [0, 1]]
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Standard straight draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "60-120 epi",
+              "weft_density": "60-120 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Fine to medium weight",
+              "weft": "Fine to medium weight - balanced with warp"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.12,
+              "vertical_inches": 0.12
+            },
+            "color_palette": ["white", "cream", "grey", "navy", "black", "subtle tones"],
+            "texture_profile": ["smooth", "matte finish", "uniform"],
+            "visual_characteristics": ["neutral", "refined", "subtle"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["refined", "subtle", "minimalist", "elegant"],
+            "seasonal_relevance": ["all-season"],
+            "market_segment": ["luxury", "contemporary", "minimalist"],
+            "price_tier": "mid to premium",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["fine dress shirts", "luxury casual", "refined suiting", "premium basics"],
+            "garment_types": ["dress shirts", "blouses", "tailored wear", "minimalist garments"],
+            "fabric_hand": "smooth, refined, subtle sheen reduction"
+          },
+          "production_data": {
+            "estimated_production_time": "2.5 hours per 10 yards",
+            "thread_waste_percentage": 4,
+            "setup_time_minutes": 20,
+            "minimum_yardage": 20,
+            "cost_index": 1.12
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 6,
+            "breathability": 7,
+            "stretch_factor": 1,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional finish",
+            "designer_notes": "High quality finish with matte appearance - requires fine yarns",
+            "inspiration_source": "Luxury textile traditions",
+            "cultural_origin": "European luxury textiles",
+            "sustainability_score": 7,
+            "digital_trends": ["minimalist", "refined", "luxury"]
+          },
+          "variations_available": [
+            {"variation_name": "Ultra-Fine Matt", "description": "High thread count luxury"},
+            {"variation_name": "Organic Matt", "description": "Natural fiber version"},
+            {"variation_name": "Blended Matt", "description": "Cotton-silk or wool-silk blend"}
+          ]
+        },
+
+        {
+          "design_id": "BW_010_PANAMA_WEAVE",
+          "design_name": "Panama Weave",
+          "category": "Basic Weaves",
+          "subcategory": "Plain Weave - Panama",
+          "description": "Plain weave variation with equal-sized groups of warp and weft (typically 2x2 or 3x3) creating checks with balanced texture.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave - Panama",
+            "base_structure": "Equal warp and weft grouping",
+            "peg_matrix": {
+              "width_ends": 4,
+              "height_picks": 4,
+              "matrix": [[1,1,0,0],[1,1,0,0],[0,0,1,1],[0,0,1,1]]
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Grouped straight draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "40-80 epi",
+              "weft_density": "40-80 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight - often straw-like fibers",
+              "weft": "Medium weight - often straw-like fibers"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.3,
+              "vertical_inches": 0.3
+            },
+            "color_palette": ["white", "natural", "cream", "tan", "navy", "striped combinations"],
+            "texture_profile": ["textured", "open weave", "dimensional"],
+            "visual_characteristics": ["geometric", "balanced", "regular"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["summery", "open-weave", "casual", "breezy"],
+            "seasonal_relevance": ["spring", "summer"],
+            "market_segment": ["casual", "lifestyle", "contemporary"],
+            "price_tier": "entry to mid",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["summer wear", "lightweight shirts", "Panama hats base", "casual apparel"],
+            "garment_types": ["summer shirts", "lightweight pants", "casual wear"],
+            "fabric_hand": "open, breathable, crisp"
+          },
+          "production_data": {
+            "estimated_production_time": "2.5 hours per 10 yards",
+            "thread_waste_percentage": 5,
+            "setup_time_minutes": 25,
+            "minimum_yardage": 15,
+            "cost_index": 1.1
+          },
+          "performance_metrics": {
+            "durability_rating": 6,
+            "wrinkle_resistance": 4,
+            "breathability": 9,
+            "stretch_factor": 2,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional - centuries old",
+            "designer_notes": "Excellent breathability for warm weather. Often made with cotton, linen, or straw fibers.",
+            "inspiration_source": "Traditional summer wear",
+            "cultural_origin": "Latin American heritage - Panama hats tradition",
+            "sustainability_score": 9,
+            "digital_trends": ["summery", "breathable", "casual"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Panama", "description": "Tighter weave - refined"},
+            {"variation_name": "Open Panama", "description": "Loose weave - maximum breathability"},
+            {"variation_name": "Striped Panama", "description": "Color-blocked grouping"}
+          ]
+        }
+      ]
+    },
+
+    "twill_weaves": {
+      "category": "2. TWILL WEAVES",
+      "description": "Diagonal line weaves with varied patterns and directions",
+      "total_in_category": 18,
+      "note": "Comprehensive collection includes basic twills (2/1, 3/1, 2/2, 4/1, 1/3), direction variations (S-twill, Z-twill), and multiple variations (Straight, Broken, Reversed, Herringbone, Diamond, Zig-Zag, Elongated, Stepped, Pointed, Shaded, Combined, Curved)",
+      "designs": [
+        {
+          "design_id": "TW_001_TWILL_2/1",
+          "design_name": "2/1 Twill",
+          "category": "Basic Weaves",
+          "subcategory": "Twill Weave - Basic Twills",
+          "description": "Basic twill where warp floats over 2 weft threads then under 1, creating diagonal line stepping by 1 thread per pick. Classic and versatile.",
+          "technical_specifications": {
+            "weave_type": "Twill",
+            "base_structure": "2 over, 1 under",
+            "peg_matrix": {
+              "width_ends": 3,
+              "height_picks": 3,
+              "matrix": [[1,1,0],[0,1,1],[1,0,1]]
+            },
+            "loom_setup": {
+              "shaft_count": 3,
+              "threading_type": "Twill progression",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "50-120 epi",
+              "weft_density": "40-100 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight - wool, cotton, synthetic",
+              "weft": "Medium weight"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.2,
+              "vertical_inches": 0.2
+            },
+            "color_palette": ["navy", "grey", "brown", "olive", "burgundy"],
+            "texture_profile": ["diagonal texture", "pronounced lines"],
+            "visual_characteristics": ["diagonal", "structured", "classic"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["classic", "workwear", "durable", "timeless"],
+            "seasonal_relevance": ["fall", "winter", "all-season"],
+            "market_segment": ["contemporary", "workwear", "classic"],
+            "price_tier": "entry to mid",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "workwear"],
+            "specific_applications": ["denim base", "chinos", "work pants", "casual suiting"],
+            "garment_types": ["trousers", "jeans", "work wear", "casual jackets"],
+            "fabric_hand": "structured, durable, textured"
+          },
+          "production_data": {
+            "estimated_production_time": "2.5 hours per 10 yards",
+            "thread_waste_percentage": 5,
+            "setup_time_minutes": 25,
+            "minimum_yardage": 20,
+            "cost_index": 1.1
+          },
+          "performance_metrics": {
+            "durability_rating": 9,
+            "wrinkle_resistance": 7,
+            "breathability": 6,
+            "stretch_factor": 2,
+            "care_complexity": "low"
+          },
+          "contextual_metadata": {
+            "created_date": "Ancient technique",
+            "designer_notes": "Most common twill ratio - excellent balance of durability and comfort",
+            "inspiration_source": "Traditional workwear",
+            "cultural_origin": "Multi-cultural - ancient origin",
+            "sustainability_score": 7,
+            "digital_trends": ["classic", "workwear", "durable"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine 2/1", "description": "High thread count"},
+            {"variation_name": "Heavy 2/1", "description": "Workwear weight"},
+            {"variation_name": "Compact 2/1", "description": "Tight density"}
+          ]
+        },
+
+        {
+          "design_id": "TW_002_TWILL_3/1",
+          "design_name": "3/1 Twill",
+          "category": "Basic Weaves",
+          "subcategory": "Twill Weave - Basic Twills",
+          "description": "Twill where warp floats over 3 weft threads then under 1, creating more pronounced diagonal lines than 2/1.",
+          "technical_specifications": {
+            "weave_type": "Twill",
+            "base_structure": "3 over, 1 under",
+            "peg_matrix": {
+              "width_ends": 4,
+              "height_picks": 4,
+              "matrix": [[1,1,1,0],[0,1,1,1],[1,0,1,1],[1,1,0,1]]
+            },
+            "loom_setup": {
+              "shaft_count": 4,
+              "threading_type": "Twill progression",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "50-100 epi",
+              "weft_density": "40-80 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight",
+              "weft": "Medium weight"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.25,
+              "vertical_inches": 0.25
+            },
+            "color_palette": ["navy", "grey", "brown", "charcoal"],
+            "texture_profile": ["pronounced diagonal", "textured"],
+            "visual_characteristics": ["diagonal", "bold", "pronounced"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["classic", "suiting", "professional"],
+            "seasonal_relevance": ["fall", "winter", "all-season"],
+            "market_segment": ["contemporary", "professional", "classic"],
+            "price_tier": "mid",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["suiting", "dress pants", "professional wear"],
+            "garment_types": ["trousers", "jackets", "suits", "professional wear"],
+            "fabric_hand": "structured, pronounced texture"
+          },
+          "production_data": {
+            "estimated_production_time": "2.5 hours per 10 yards",
+            "thread_waste_percentage": 6,
+            "setup_time_minutes": 30,
+            "minimum_yardage": 25,
+            "cost_index": 1.15
+          },
+          "performance_metrics": {
+            "durability_rating": 9,
+            "wrinkle_resistance": 8,
+            "breathability": 5,
+            "stretch_factor": 1,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional",
+            "designer_notes": "Pronounced diagonal creates sophisticated appearance",
+            "inspiration_source": "Suiting traditions",
+            "cultural_origin": "European suiting",
+            "sustainability_score": 6,
+            "digital_trends": ["professional", "classic", "suiting"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine 3/1 Suiting", "description": "Premium weight"},
+            {"variation_name": "Heavy 3/1", "description": "Workwear weight"}
+          ]
+        },
+
+        {
+          "design_id": "TW_003_TWILL_2/2",
+          "design_name": "2/2 Twill",
+          "category": "Basic Weaves",
+          "subcategory": "Twill Weave - Basic Twills",
+          "description": "Balanced twill where warp floats over 2 and under 2 weft threads, creating smooth diagonal lines with less pronounced texture.",
+          "technical_specifications": {
+            "weave_type": "Twill",
+            "base_structure": "2 over, 2 under",
+            "peg_matrix": {
+              "width_ends": 4,
+              "height_picks": 4,
+              "matrix": [[1,1,0,0],[0,1,1,0],[0,0,1,1],[1,0,0,1]]
+            },
+            "loom_setup": {
+              "shaft_count": 4,
+              "threading_type": "Twill progression",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "50-100 epi",
+              "weft_density": "50-100 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight",
+              "weft": "Medium weight"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.25,
+              "vertical_inches": 0.25
+            },
+            "color_palette": ["grey", "navy", "brown", "multi-tone"],
+            "texture_profile": ["diagonal", "balanced", "subtle"],
+            "visual_characteristics": ["diagonal", "balanced", "refined"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["balanced", "refined", "versatile"],
+            "seasonal_relevance": ["all-season"],
+            "market_segment": ["contemporary", "lifestyle", "classic"],
+            "price_tier": "mid",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["casual suiting", "dress pants", "contemporary wear"],
+            "garment_types": ["trousers", "jackets", "versatile wear"],
+            "fabric_hand": "balanced, refined, subtle texture"
+          },
+          "production_data": {
+            "estimated_production_time": "2.5 hours per 10 yards",
+            "thread_waste_percentage": 5,
+            "setup_time_minutes": 25,
+            "minimum_yardage": 20,
+            "cost_index": 1.12
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 7,
+            "breathability": 6,
+            "stretch_factor": 2,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional",
+            "designer_notes": "Balanced structure offers versatility - works for many applications",
+            "inspiration_source": "Classic twill tradition",
+            "cultural_origin": "European textile traditions",
+            "sustainability_score": 7,
+            "digital_trends": ["versatile", "classic", "balanced"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine 2/2", "description": "Refined appearance"},
+            {"variation_name": "Open 2/2", "description": "Breathable version"}
+          ]
+        },
+
+        {
+          "design_id": "TW_004_HERRINGBONE",
+          "design_name": "Herringbone Twill",
+          "category": "Basic Weaves",
+          "subcategory": "Twill Weave - Variations - Herringbone",
+          "description": "Broken twill variation where twill direction reverses at regular intervals, creating distinctive V-shaped or zigzag pattern. Iconic textile design.",
+          "technical_specifications": {
+            "weave_type": "Twill - Broken Variation",
+            "base_structure": "Reversed twill progression",
+            "peg_matrix": {
+              "width_ends": 4,
+              "height_picks": 8,
+              "matrix": [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1],[0,0,1,0],[0,1,0,0],[1,0,0,0],[0,0,0,1]]
+            },
+            "loom_setup": {
+              "shaft_count": 4,
+              "threading_type": "Herringbone threading",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "60-120 epi",
+              "weft_density": "60-120 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Fine to medium weight - wool, cotton, blends",
+              "weft": "Fine to medium weight - matching or complementary"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.5,
+              "vertical_inches": 1.0
+            },
+            "color_palette": ["charcoal", "grey", "navy", "brown", "black", "natural"],
+            "texture_profile": ["diagonal", "V-shaped pattern", "textured"],
+            "visual_characteristics": ["geometric", "iconic", "sophisticated"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["classic", "formal-wear", "timeless", "iconic"],
+            "seasonal_relevance": ["fall", "winter", "all-season"],
+            "market_segment": ["luxury", "contemporary", "classic"],
+            "price_tier": "premium",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["suiting", "tailoring", "formal wear", "luxury casual"],
+            "garment_types": ["suits", "trousers", "jackets", "dress wear"],
+            "fabric_hand": "structured, sophisticated, crisp"
+          },
+          "production_data": {
+            "estimated_production_time": "3 hours per 10 yards",
+            "thread_waste_percentage": 7,
+            "setup_time_minutes": 40,
+            "minimum_yardage": 30,
+            "cost_index": 1.25
+          },
+          "performance_metrics": {
+            "durability_rating": 9,
+            "wrinkle_resistance": 8,
+            "breathability": 6,
+            "stretch_factor": 1,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Classic weave - centuries old",
+            "designer_notes": "Iconic pattern with timeless appeal. Requires precise threading for perfect V-pattern.",
+            "inspiration_source": "Fishbone structure in nature",
+            "cultural_origin": "European tailoring tradition",
+            "sustainability_score": 6,
+            "digital_trends": ["timeless", "formal", "iconic"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Herringbone", "description": "High thread count for premium suiting"},
+            {"variation_name": "Bold Herringbone", "description": "Larger pattern scale"},
+            {"variation_name": "Herringbone Stripes", "description": "With color variation"}
+          ]
+        },
+
+        {
+          "design_id": "TW_005_DIAMOND_TWILL",
+          "design_name": "Diamond Twill",
+          "category": "Basic Weaves",
+          "subcategory": "Twill Weave - Variations - Diamond",
+          "description": "Complex twill variation combining ascending and descending diagonal lines to create diamond-shaped patterns.",
+          "technical_specifications": {
+            "weave_type": "Twill - Diamond Variation",
+            "base_structure": "Bidirectional twill",
+            "peg_matrix": {
+              "width_ends": 8,
+              "height_picks": 8,
+              "description": "Complex pattern creating diamonds"
+            },
+            "loom_setup": {
+              "shaft_count": 6,
+              "threading_type": "Complex diamond threading",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "60-100 epi",
+              "weft_density": "60-100 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight",
+              "weft": "Medium weight"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.6,
+              "vertical_inches": 0.6
+            },
+            "color_palette": ["navy", "grey", "brown", "charcoal", "black"],
+            "texture_profile": ["geometric", "diamond shapes", "sophisticated"],
+            "visual_characteristics": ["geometric", "complex", "sophisticated"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["sophisticated", "artistic", "luxury"],
+            "seasonal_relevance": ["fall", "winter", "all-season"],
+            "market_segment": ["luxury", "designer", "contemporary"],
+            "price_tier": "premium",
+            "production_complexity": "high"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["luxury suiting", "artistic wear", "statement pieces"],
+            "garment_types": ["designer suits", "artistic garments", "luxury wear"],
+            "fabric_hand": "sophisticated, textured, luxury"
+          },
+          "production_data": {
+            "estimated_production_time": "3.5 hours per 10 yards",
+            "thread_waste_percentage": 8,
+            "setup_time_minutes": 50,
+            "minimum_yardage": 35,
+            "cost_index": 1.35
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 7,
+            "breathability": 5,
+            "stretch_factor": 1,
+            "care_complexity": "high"
+          },
+          "contextual_metadata": {
+            "created_date": "Advanced weaving technique",
+            "designer_notes": "Complex pattern requires skilled weaver. Creates sophisticated appearance.",
+            "inspiration_source": "Geometric design and luxury tradition",
+            "cultural_origin": "European luxury textiles",
+            "sustainability_score": 5,
+            "digital_trends": ["sophisticated", "luxury", "artistic"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Diamond", "description": "Small intricate diamonds"},
+            {"variation_name": "Bold Diamond", "description": "Large statement diamonds"},
+            {"variation_name": "Multi-Color Diamond", "description": "Color variation in pattern"}
+          ]
+        },
+
+        {
+          "design_id": "TW_006_ZIG_ZAG",
+          "design_name": "Zig-Zag Twill",
+          "category": "Basic Weaves",
+          "subcategory": "Twill Weave - Variations - Zig-Zag",
+          "description": "Stepped twill variation creating sharp zigzag or sawtooth pattern across the fabric.",
+          "technical_specifications": {
+            "weave_type": "Twill - Zig-Zag Variation",
+            "base_structure": "Stepped diagonal reversal",
+            "peg_matrix": {
+              "width_ends": 6,
+              "height_picks": 6,
+              "description": "Stepped pattern creating zigzag"
+            },
+            "loom_setup": {
+              "shaft_count": 4,
+              "threading_type": "Stepped twill",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "50-100 epi",
+              "weft_density": "50-100 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight",
+              "weft": "Medium weight"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.4,
+              "vertical_inches": 0.4
+            },
+            "color_palette": ["navy", "grey", "brown", "earth-tones", "multi-color"],
+            "texture_profile": ["angular", "geometric", "pronounced"],
+            "visual_characteristics": ["geometric", "angular", "dynamic"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["geometric", "contemporary", "artistic"],
+            "seasonal_relevance": ["spring", "fall", "all-season"],
+            "market_segment": ["contemporary", "artistic", "casual"],
+            "price_tier": "mid to premium",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["contemporary wear", "artistic pieces", "casual suiting"],
+            "garment_types": ["contemporary jackets", "artistic wear", "statement pieces"],
+            "fabric_hand": "textured, angular, contemporary"
+          },
+          "production_data": {
+            "estimated_production_time": "3 hours per 10 yards",
+            "thread_waste_percentage": 7,
+            "setup_time_minutes": 35,
+            "minimum_yardage": 25,
+            "cost_index": 1.2
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 6,
+            "breathability": 6,
+            "stretch_factor": 2,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Modern textile design",
+            "designer_notes": "Creates dynamic, geometric appearance. Works well with high contrast colors.",
+            "inspiration_source": "Contemporary geometric design",
+            "cultural_origin": "Modern design innovation",
+            "sustainability_score": 7,
+            "digital_trends": ["geometric", "contemporary", "dynamic"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Zig-Zag", "description": "Tight angles"},
+            {"variation_name": "Bold Zig-Zag", "description": "Wide angles"},
+            {"variation_name": "Colored Zig-Zag", "description": "Color-blocked pattern"}
+          ]
+        }
+      ]
+    },
+
+    "satin_weaves": {
+      "category": "3. SATIN / SATEEN WEAVES",
+      "description": "Long float weaves creating smooth lustrous surfaces",
+      "total_in_category": 8,
+      "note": "Includes regular satin (5-end, 7-end, 8-end), irregular satin, sateen, warp/figured satin, and specialty variations",
+      "designs": [
+        {
+          "design_id": "SA_001_SATIN_5END",
+          "design_name": "5-End Satin",
+          "category": "Basic Weaves",
+          "subcategory": "Satin / Sateen - Regular Satin",
+          "description": "Satin weave where warp floats over 4 picks and under 1, creating smooth lustrous surface with 5-thread repeat.",
+          "technical_specifications": {
+            "weave_type": "Satin",
+            "base_structure": "4 float, 1 under",
+            "peg_matrix": {
+              "width_ends": 5,
+              "height_picks": 5,
+              "matrix": [[1,0,0,0,0],[0,1,0,0,0],[0,0,1,0,0],[0,0,0,1,0],[0,0,0,0,1]]
+            },
+            "loom_setup": {
+              "shaft_count": 5,
+              "threading_type": "Satin threading (staggered)",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "80-150 epi",
+              "weft_density": "80-150 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Fine weight - silk, polyester, high-quality cotton",
+              "weft": "Fine weight - silk, polyester, cotton"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.3,
+              "vertical_inches": 0.3
+            },
+            "color_palette": ["ivory", "black", "navy", "red", "jewel-tones", "pastels"],
+            "texture_profile": ["smooth", "lustrous", "flowing"],
+            "visual_characteristics": ["sleek", "elegant", "luxurious"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["luxury", "elegant", "flowing", "formal"],
+            "seasonal_relevance": ["all-season"],
+            "market_segment": ["luxury", "formal", "evening-wear"],
+            "price_tier": "premium to luxury",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor"],
+            "specific_applications": ["evening wear", "formal gowns", "luxury lingerie", "decorative textiles"],
+            "garment_types": ["gowns", "formal wear", "luxury apparel", "home textiles"],
+            "fabric_hand": "smooth, lustrous, flowing, elegant"
+          },
+          "production_data": {
+            "estimated_production_time": "3.5 hours per 10 yards",
+            "thread_waste_percentage": 8,
+            "setup_time_minutes": 45,
+            "minimum_yardage": 30,
+            "cost_index": 1.4
+          },
+          "performance_metrics": {
+            "durability_rating": 6,
+            "wrinkle_resistance": 4,
+            "breathability": 5,
+            "stretch_factor": 3,
+            "care_complexity": "high"
+          },
+          "contextual_metadata": {
+            "created_date": "Ancient technique - luxury tradition",
+            "designer_notes": "Requires fine yarns and precise execution. Prone to snags due to long floats.",
+            "inspiration_source": "Royal textile traditions",
+            "cultural_origin": "Asian silk tradition",
+            "sustainability_score": 4,
+            "digital_trends": ["luxury", "formal", "elegant"]
+          },
+          "variations_available": [
+            {"variation_name": "Silk Satin", "description": "Pure silk luxury"},
+            {"variation_name": "Polyester Satin", "description": "Durable and practical"},
+            {"variation_name": "Cotton Sateen", "description": "Breathable luxury"}
+          ]
+        }
+      ]
+    },
+
+    "dobby_designs": {
+      "category": "4. DOBBY DESIGNS (Small Repeat System)",
+      "description": "Small repeating patterns created on dobby looms",
+      "total_in_category": 28,
+      "note": "Includes geometric patterns (checks, diamonds, lattice), texture-based designs, stripes, small motifs, and functional designs",
+      "sample_designs": [
+        {
+          "design_id": "DB_001_REGULAR_CHECK",
+          "design_name": "Regular Checks",
+          "category": "Dobby Designs",
+          "subcategory": "Geometric Patterns - Checks",
+          "description": "Simple regular check pattern created by alternating colored warp and weft threads, producing uniform square checks.",
+          "technical_specifications": {
+            "weave_type": "Plain Weave with color variation",
+            "base_structure": "1x1 with alternating warp/weft colors",
+            "peg_matrix": {
+              "width_ends": 2,
+              "height_picks": 2,
+              "matrix": [[1,0],[0,1]]
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Color alternating draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "40-100 epi",
+              "weft_density": "40-100 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight in 2 colors",
+              "weft": "Medium weight in 2 colors"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.3,
+              "vertical_inches": 0.3
+            },
+            "color_palette": ["white-navy", "white-black", "cream-grey", "red-white", "custom combinations"],
+            "texture_profile": ["textured", "regular", "grid-like"],
+            "visual_characteristics": ["geometric", "regular", "classic"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["classic", "timeless", "versatile", "casual"],
+            "seasonal_relevance": ["all-season"],
+            "market_segment": ["casual", "contemporary", "lifestyle"],
+            "price_tier": "entry to mid",
+            "production_complexity": "low"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor"],
+            "specific_applications": ["casual shirting", "gingham wear", "children's wear", "home textiles"],
+            "garment_types": ["casual shirts", "blouses", "children's clothing", "accessories"],
+            "fabric_hand": "textured, casual, crisp"
+          },
+          "production_data": {
+            "estimated_production_time": "2 hours per 10 yards",
+            "thread_waste_percentage": 5,
+            "setup_time_minutes": 25,
+            "minimum_yardage": 15,
+            "cost_index": 1.08
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 6,
+            "breathability": 7,
+            "stretch_factor": 2,
+            "care_complexity": "low"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional pattern",
+            "designer_notes": "Timeless pattern that works in virtually any color combination",
+            "inspiration_source": "Traditional gingham",
+            "cultural_origin": "Multi-cultural - widely used",
+            "sustainability_score": 8,
+            "digital_trends": ["classic", "versatile", "timeless"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Check", "description": "Small checks"},
+            {"variation_name": "Medium Check", "description": "Standard size"},
+            {"variation_name": "Large Check", "description": "Bold statement"},
+            {"variation_name": "Multi-Color Check", "description": "3+ colors"}
+          ]
+        },
+
+        {
+          "design_id": "DB_002_BIRDSEYE",
+          "design_name": "Birdseye Pattern",
+          "category": "Dobby Designs",
+          "subcategory": "Geometric Patterns - Birdseye",
+          "description": "Fine pattern resembling bird eyes, created through small warp and weft color variations, typical in suiting.",
+          "technical_specifications": {
+            "weave_type": "Plain or twill base with color variation",
+            "base_structure": "1x1 or 2x2 base with strategic color placement",
+            "peg_matrix": {
+              "width_ends": 3,
+              "height_picks": 3,
+              "description": "Small repeating pattern creating eye-like appearance"
+            },
+            "loom_setup": {
+              "shaft_count": 2,
+              "threading_type": "Fine color variation draft",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "80-150 epi",
+              "weft_density": "80-150 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Fine weight in primary and accent color",
+              "weft": "Fine weight in primary and accent color"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.15,
+              "vertical_inches": 0.15
+            },
+            "color_palette": ["navy-white", "grey-white", "charcoal-grey", "brown-tan"],
+            "texture_profile": ["micro-texture", "subtle", "refined"],
+            "visual_characteristics": ["geometric", "refined", "sophisticated"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["refined", "sophisticated", "formal", "classic"],
+            "seasonal_relevance": ["all-season"],
+            "market_segment": ["luxury", "formal", "professional"],
+            "price_tier": "premium",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["fine suiting", "dress pants", "formal wear", "luxury shirts"],
+            "garment_types": ["suits", "dress pants", "formal wear", "luxury shirts"],
+            "fabric_hand": "refined, sophisticated, crisp"
+          },
+          "production_data": {
+            "estimated_production_time": "3 hours per 10 yards",
+            "thread_waste_percentage": 6,
+            "setup_time_minutes": 35,
+            "minimum_yardage": 25,
+            "cost_index": 1.2
+          },
+          "performance_metrics": {
+            "durability_rating": 9,
+            "wrinkle_resistance": 8,
+            "breathability": 6,
+            "stretch_factor": 1,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Classic suiting pattern",
+            "designer_notes": "Subtle pattern adds interest without being bold. Perfect for formal wear.",
+            "inspiration_source": "Traditional suiting",
+            "cultural_origin": "European suiting tradition",
+            "sustainability_score": 6,
+            "digital_trends": ["refined", "formal", "sophisticated"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Birdseye", "description": "Micro pattern"},
+            {"variation_name": "Bold Birdseye", "description": "More pronounced"},
+            {"variation_name": "Colored Birdseye", "description": "Multiple color combinations"}
+          ]
+        }
+      ]
+    },
+
+    "jacquard_designs": {
+      "category": "5. JACQUARD DESIGNS (Large / Complex System)",
+      "description": "Large and complex patterns created on jacquard looms",
+      "total_in_category": 27,
+      "note": "Includes floral (Mughal, Persian, European, Tropical, Abstract), traditional/ethnic (Paisley, Damask, Brocade, Banarasi, Kalamkari, Ikat), geometric complex (Mandala, Tessellation, Islamic Geometry, Tiles), figurative (Humans, Animals, Birds, Mythological, Portraits), scenic designs, and tapestry/storytelling",
+      "sample_designs": [
+        {
+          "design_id": "JQ_001_MUGHAL_FLORAL",
+          "design_name": "Mughal Floral",
+          "category": "Jacquard Designs",
+          "subcategory": "Floral - Mughal",
+          "description": "Rich floral pattern inspired by Mughal gardens, featuring layered flowers, leaves, and intricate botanical details.",
+          "technical_specifications": {
+            "weave_type": "Jacquard",
+            "base_structure": "Complex multi-color jacquard",
+            "peg_matrix": {
+              "width_ends": 200,
+              "height_picks": 300,
+              "description": "Complex pattern file with multiple color positions"
+            },
+            "loom_setup": {
+              "shaft_count": 8,
+              "threading_type": "Jacquard threading",
+              "harness_required": true,
+              "dobby_compatible": false,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "100-200 epi",
+              "weft_density": "100-200 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Fine to medium weight - silk, cotton, or blends",
+              "weft": "Fine to medium weight - multiple colors"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 3.0,
+              "vertical_inches": 4.0
+            },
+            "color_palette": ["gold", "ruby red", "emerald green", "sapphire blue", "ivory", "burgundy"],
+            "texture_profile": ["richly textured", "dimensional", "layered"],
+            "visual_characteristics": ["botanical", "ornate", "luxurious", "detailed"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["heritage", "mughal-inspired", "luxury", "cultural", "ornate"],
+            "seasonal_relevance": ["all-season"],
+            "market_segment": ["luxury", "heritage", "cultural"],
+            "price_tier": "luxury",
+            "production_complexity": "high"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor", "upholstery"],
+            "specific_applications": ["evening wear", "bridal wear", "luxury furnishings", "upholstery", "decorative pieces"],
+            "garment_types": ["gowns", "bridal wear", "luxury apparel", "home furnishings"],
+            "fabric_hand": "luxurious, ornate, textured"
+          },
+          "production_data": {
+            "estimated_production_time": "6-8 hours per 10 yards",
+            "thread_waste_percentage": 12,
+            "setup_time_minutes": 120,
+            "minimum_yardage": 50,
+            "cost_index": 2.0
+          },
+          "performance_metrics": {
+            "durability_rating": 7,
+            "wrinkle_resistance": 5,
+            "breathability": 4,
+            "stretch_factor": 1,
+            "care_complexity": "high"
+          },
+          "contextual_metadata": {
+            "created_date": "Historical - revived in modern times",
+            "designer_notes": "Requires skilled jacquard programmer. Each design is a digital artwork.",
+            "inspiration_source": "Mughal garden motifs and historical textiles",
+            "cultural_origin": "Indian - Mughal heritage",
+            "sustainability_score": 4,
+            "digital_trends": ["heritage", "luxury", "cultural"]
+          },
+          "variations_available": [
+            {"variation_name": "Traditional Mughal", "description": "Classic color palette"},
+            {"variation_name": "Modern Mughal", "description": "Contemporary color interpretation"},
+            {"variation_name": "Gold Mughal", "description": "Metallic thread variation"},
+            {"variation_name": "Tonal Mughal", "description": "Single color monochrome"}
+          ]
+        },
+
+        {
+          "design_id": "JQ_002_PAISLEY",
+          "design_name": "Paisley Pattern",
+          "category": "Jacquard Designs",
+          "subcategory": "Traditional / Ethnic - Paisley",
+          "description": "Classic paisley motif with teardrop-shaped design filled with intricate details, symbol of heritage and tradition.",
+          "technical_specifications": {
+            "weave_type": "Jacquard",
+            "base_structure": "Multi-color jacquard with repeating motifs",
+            "peg_matrix": {
+              "width_ends": 150,
+              "height_picks": 200,
+              "description": "Repeating paisley motif pattern"
+            },
+            "loom_setup": {
+              "shaft_count": 8,
+              "threading_type": "Jacquard",
+              "harness_required": true,
+              "dobby_compatible": false,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "80-160 epi",
+              "weft_density": "80-160 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Fine to medium weight",
+              "weft": "Fine to medium weight - multiple colors"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 2.0,
+              "vertical_inches": 2.5
+            },
+            "color_palette": ["navy-gold", "burgundy-cream", "black-white", "jewel-tones"],
+            "texture_profile": ["detailed", "ornate", "dimensional"],
+            "visual_characteristics": ["botanical", "ornate", "geometric-organic hybrid"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["heritage", "traditional", "ornate", "timeless"],
+            "seasonal_relevance": ["all-season"],
+            "market_segment": ["heritage", "luxury", "formal"],
+            "price_tier": "premium to luxury",
+            "production_complexity": "high"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor"],
+            "specific_applications": ["evening wear", "formal gowns", "luxury scarves", "home furnishings", "upholstery"],
+            "garment_types": ["gowns", "formal wear", "accessories", "home furnishings"],
+            "fabric_hand": "luxurious, ornate, textured"
+          },
+          "production_data": {
+            "estimated_production_time": "5-7 hours per 10 yards",
+            "thread_waste_percentage": 10,
+            "setup_time_minutes": 90,
+            "minimum_yardage": 40,
+            "cost_index": 1.8
+          },
+          "performance_metrics": {
+            "durability_rating": 7,
+            "wrinkle_resistance": 5,
+            "breathability": 4,
+            "stretch_factor": 1,
+            "care_complexity": "high"
+          },
+          "contextual_metadata": {
+            "created_date": "Historic pattern - centuries old",
+            "designer_notes": "Universal pattern with endless color and scale variations",
+            "inspiration_source": "Persian and Indian textile traditions",
+            "cultural_origin": "Persian/Indian heritage",
+            "sustainability_score": 4,
+            "digital_trends": ["timeless", "heritage", "versatile"]
+          },
+          "variations_available": [
+            {"variation_name": "Classic Paisley", "description": "Traditional scale"},
+            {"variation_name": "Oversized Paisley", "description": "Bold statement"},
+            {"variation_name": "Petit Paisley", "description": "Fine detailed"},
+            {"variation_name": "Colorway Variations", "description": "Multiple color options"}
+          ]
+        },
+
+        {
+          "design_id": "JQ_003_DAMASK",
+          "design_name": "Damask Pattern",
+          "category": "Jacquard Designs",
+          "subcategory": "Traditional / Ethnic - Damask",
+          "description": "Elegant damask pattern with symmetrical floral and geometric motifs, creating formal and sophisticated appearance.",
+          "technical_specifications": {
+            "weave_type": "Jacquard",
+            "base_structure": "Symmetrical damask pattern",
+            "peg_matrix": {
+              "width_ends": 180,
+              "height_picks": 250,
+              "description": "Symmetrical ornamental pattern"
+            },
+            "loom_setup": {
+              "shaft_count": 8,
+              "threading_type": "Jacquard",
+              "harness_required": true,
+              "dobby_compatible": false,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "100-180 epi",
+              "weft_density": "100-180 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight",
+              "weft": "Medium weight - often metallic or lustrous"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 2.5,
+              "vertical_inches": 3.0
+            },
+            "color_palette": ["white-cream", "gold-ivory", "silver-grey", "burgundy-gold"],
+            "texture_profile": ["formal", "lustrous", "dimensional"],
+            "visual_characteristics": ["symmetrical", "elegant", "formal"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["formal", "elegant", "classic", "luxury"],
+            "seasonal_relevance": ["all-season"],
+            "market_segment": ["luxury", "formal", "home-decor"],
+            "price_tier": "premium to luxury",
+            "production_complexity": "high"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor"],
+            "specific_applications": ["formal gowns", "home furnishings", "upholstery", "drapery", "wall coverings"],
+            "garment_types": ["formal wear", "gowns", "home furnishings"],
+            "fabric_hand": "formal, elegant, lustrous"
+          },
+          "production_data": {
+            "estimated_production_time": "6-8 hours per 10 yards",
+            "thread_waste_percentage": 11,
+            "setup_time_minutes": 110,
+            "minimum_yardage": 45,
+            "cost_index": 1.9
+          },
+          "performance_metrics": {
+            "durability_rating": 8,
+            "wrinkle_resistance": 6,
+            "breathability": 4,
+            "stretch_factor": 1,
+            "care_complexity": "high"
+          },
+          "contextual_metadata": {
+            "created_date": "Ancient pattern - Syrian origin",
+            "designer_notes": "Symmetrical design creates formal appearance. Works beautifully with metallic accents.",
+            "inspiration_source": "Historical damask textiles from Damascus",
+            "cultural_origin": "Middle Eastern - Syrian heritage",
+            "sustainability_score": 3,
+            "digital_trends": ["formal", "elegant", "classic"]
+          },
+          "variations_available": [
+            {"variation_name": "Classic Damask", "description": "Traditional monochrome"},
+            {"variation_name": "Metallic Damask", "description": "Gold or silver accents"},
+            {"variation_name": "Colored Damask", "description": "Multi-color version"},
+            {"variation_name": "Modern Damask", "description": "Contemporary interpretation"}
+          ]
+        }
+      ]
+    },
+
+    "structural_weaves": {
+      "category": "6. STRUCTURAL WEAVES (Advanced Fabric Engineering)",
+      "description": "Advanced construction techniques creating specialized fabric properties",
+      "total_in_category": 17,
+      "note": "Includes extra yarn designs (extra warp/weft, clip, embroidery), pile weaves (velvet, corduroy, terry), leno weaves (gauze, net, mesh), double cloth, multi-layer, and 3D structures",
+      "sample_designs": [
+        {
+          "design_id": "ST_001_VELVET",
+          "design_name": "Velvet - Cut Pile",
+          "category": "Structural Weaves",
+          "subcategory": "Pile Weaves - Velvet",
+          "description": "Luxurious pile fabric created with extra warp threads forming loops that are cut to create soft, dense surface.",
+          "technical_specifications": {
+            "weave_type": "Pile - Cut",
+            "base_structure": "Warp pile with cut surface",
+            "peg_matrix": {
+              "description": "Ground weave with extra warp for pile",
+              "ground_weave": "twill or plain"
+            },
+            "loom_setup": {
+              "shaft_count": 6,
+              "threading_type": "Pile threading with extra beam",
+              "harness_required": true,
+              "dobby_compatible": false,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "60-120 epi (including pile warp)",
+              "weft_density": "40-80 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Fine to medium weight - rayon, silk, or polyester for pile",
+              "weft": "Ground weave - cotton, polyester"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": "varies",
+              "vertical_inches": "varies"
+            },
+            "color_palette": ["black", "jewel-tones", "deep colors", "earth-tones"],
+            "texture_profile": ["dense pile", "soft", "luxurious"],
+            "visual_characteristics": ["luxurious", "elegant", "tactile"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["luxury", "elegant", "soft", "formal"],
+            "seasonal_relevance": ["fall", "winter"],
+            "market_segment": ["luxury", "formal", "evening-wear"],
+            "price_tier": "premium to luxury",
+            "production_complexity": "high"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor", "upholstery"],
+            "specific_applications": ["evening gowns", "formal wear", "luxury upholstery", "curtains", "throws"],
+            "garment_types": ["gowns", "formal wear", "luxury apparel", "home furnishings"],
+            "fabric_hand": "soft, luxurious, dense, elegant"
+          },
+          "production_data": {
+            "estimated_production_time": "4-5 hours per 10 yards",
+            "thread_waste_percentage": 15,
+            "setup_time_minutes": 60,
+            "minimum_yardage": 35,
+            "cost_index": 2.2
+          },
+          "performance_metrics": {
+            "durability_rating": 6,
+            "wrinkle_resistance": 3,
+            "breathability": 2,
+            "stretch_factor": 2,
+            "care_complexity": "high"
+          },
+          "contextual_metadata": {
+            "created_date": "Luxury textile tradition",
+            "designer_notes": "Requires specialized pile loom. Brush direction affects appearance. Sensitive to crushing.",
+            "inspiration_source": "Royal textile traditions",
+            "cultural_origin": "European luxury tradition",
+            "sustainability_score": 3,
+            "digital_trends": ["luxury", "formal", "elegant"]
+          },
+          "variations_available": [
+            {"variation_name": "Silk Velvet", "description": "Premium luxury"},
+            {"variation_name": "Rayon Velvet", "description": "High sheen"},
+            {"variation_name": "Pile Height Variation", "description": "Different pile heights"}
+          ]
+        },
+
+        {
+          "design_id": "ST_002_CORDUROY",
+          "design_name": "Corduroy - Weft Pile",
+          "category": "Structural Weaves",
+          "subcategory": "Pile Weaves - Corduroy",
+          "description": "Durable pile fabric with characteristic raised ribs created by cutting weft pile, commonly used in menswear and casual apparel.",
+          "technical_specifications": {
+            "weave_type": "Pile - Weft Cut",
+            "base_structure": "Twill base with weft pile ridges",
+            "peg_matrix": {
+              "description": "Twill ground with systematic weft pile",
+              "ground_weave": "twill"
+            },
+            "loom_setup": {
+              "shaft_count": 6,
+              "threading_type": "Corduroy threading",
+              "harness_required": true,
+              "dobby_compatible": false,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "60-100 epi",
+              "weft_density": "30-50 ppi (ground), extra pile weft"
+            },
+            "yarn_requirements": {
+              "warp": "Medium weight cotton or blend",
+              "weft": "Fine for ground, coarser for pile"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.25,
+              "vertical_inches": "varies"
+            },
+            "color_palette": ["brown", "navy", "forest green", "burgundy", "grey", "earth-tones"],
+            "texture_profile": ["ribbed pile", "tactile", "pronounced"],
+            "visual_characteristics": ["structured", "textured", "casual"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["classic", "durable", "workwear-inspired", "casual"],
+            "seasonal_relevance": ["fall", "winter", "spring"],
+            "market_segment": ["casual", "contemporary", "workwear"],
+            "price_tier": "mid",
+            "production_complexity": "high"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["casual pants", "jackets", "shirts", "children's wear", "workwear"],
+            "garment_types": ["corduroy pants", "jackets", "casual wear", "children's clothing"],
+            "fabric_hand": "textured, durable, soft, warm"
+          },
+          "production_data": {
+            "estimated_production_time": "4-5 hours per 10 yards",
+            "thread_waste_percentage": 14,
+            "setup_time_minutes": 55,
+            "minimum_yardage": 30,
+            "cost_index": 1.5
+          },
+          "performance_metrics": {
+            "durability_rating": 9,
+            "wrinkle_resistance": 6,
+            "breathability": 5,
+            "stretch_factor": 2,
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional - 19th century workwear",
+            "designer_notes": "High durability with tactile appeal. Pile direction affects color appearance.",
+            "inspiration_source": "Industrial workwear tradition",
+            "cultural_origin": "European workwear heritage",
+            "sustainability_score": 5,
+            "digital_trends": ["casual", "durable", "classic"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Wale Corduroy", "description": "Narrow ribs - refined"},
+            {"variation_name": "Medium Wale", "description": "Standard width"},
+            {"variation_name": "Wide Wale", "description": "Bold statement"},
+            {"variation_name": "Stretch Corduroy", "description": "Elastane blend"}
+          ]
+        },
+
+        {
+          "design_id": "ST_003_LENO_GAUZE",
+          "design_name": "Leno Weave - Gauze",
+          "category": "Structural Weaves",
+          "subcategory": "Leno Weaves - Gauze",
+          "description": "Ultra-light, open weave fabric with exceptional breathability created through paired warp threads crossing over weft.",
+          "technical_specifications": {
+            "weave_type": "Leno",
+            "base_structure": "Twisted warp pair structure",
+            "peg_matrix": {
+              "description": "Leno crossing pattern - warp pairs twist around weft"
+            },
+            "loom_setup": {
+              "shaft_count": 4,
+              "threading_type": "Leno threading with doup heddles",
+              "harness_required": true,
+              "dobby_compatible": false,
+              "jacquard_compatible": false
+            },
+            "thread_count": {
+              "warp_density": "40-80 epi",
+              "weft_density": "20-40 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "Fine weight - cotton, silk, or synthetics",
+              "weft": "Fine weight - cotton, silk"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.2,
+              "vertical_inches": 0.2
+            },
+            "color_palette": ["white", "ivory", "cream", "pastel", "natural"],
+            "texture_profile": ["open weave", "airy", "sheer"],
+            "visual_characteristics": ["open", "transparent", "ethereal"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["breathable", "summer", "sheer", "lightweight"],
+            "seasonal_relevance": ["spring", "summer"],
+            "market_segment": ["summer", "contemporary", "casual"],
+            "price_tier": "mid",
+            "production_complexity": "high"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["summer wear", "semi-transparent apparel", "voile dresses", "lightweight scarves"],
+            "garment_types": ["summer dresses", "sheer layers", "scarves", "lightweight wear"],
+            "fabric_hand": "airy, sheer, breathable, flowing"
+          },
+          "production_data": {
+            "estimated_production_time": "3-4 hours per 10 yards",
+            "thread_waste_percentage": 8,
+            "setup_time_minutes": 45,
+            "minimum_yardage": 20,
+            "cost_index": 1.4
+          },
+          "performance_metrics": {
+            "durability_rating": 5,
+            "wrinkle_resistance": 3,
+            "breathability": 10,
+            "stretch_factor": 3,
+            "care_complexity": "high"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional lightweight weave",
+            "designer_notes": "Requires specialized leno loom with doup heddles. Delicate and requires careful handling.",
+            "inspiration_source": "Traditional summer wear",
+            "cultural_origin": "Multi-cultural summer tradition",
+            "sustainability_score": 8,
+            "digital_trends": ["breathable", "summer", "lightweight"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Gauze", "description": "Very sheer"},
+            {"variation_name": "Heavy Gauze", "description": "More body"},
+            {"variation_name": "Colored Gauze", "description": "Dyed or printed"}
+          ]
+        }
+      ]
+    },
+
+    "surface_motif_layer": {
+      "category": "7. SURFACE / MOTIF LAYER (Overlay on ANY)",
+      "description": "Decorative surface patterns that can be applied to any base weave",
+      "total_in_category": 24,
+      "note": "Includes geometric (lines, checks, zig-zag, waves, grids), floral (small, large, stylized), abstract (random, brushstroke, digital), traditional/ethnic, and conversational (animals, objects, symbols, logos)",
+      "sample_designs": [
+        {
+          "design_id": "SU_001_STRIPES",
+          "design_name": "Vertical Stripes",
+          "category": "Surface / Motif Layer",
+          "subcategory": "Geometric - Lines",
+          "description": "Simple vertical stripe pattern that can be applied through yarn coloring or printing. Creates visual elongation and movement.",
+          "technical_specifications": {
+            "weave_type": "Any (overlay pattern)",
+            "base_structure": "Any weave with stripe coloring",
+            "peg_matrix": {
+              "description": "Color variation pattern - applied through yarn selection or printing"
+            },
+            "loom_setup": {
+              "shaft_count": "depends on base weave",
+              "threading_type": "Color-based threading",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "varies by base weave",
+              "weft_density": "varies by base weave"
+            },
+            "yarn_requirements": {
+              "warp": "Two or more colors in sequence",
+              "weft": "Solid or varied"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": "varies",
+              "vertical_inches": "continuous"
+            },
+            "color_palette": ["any color combination", "high contrast or tonal"],
+            "texture_profile": ["varies with base weave"],
+            "visual_characteristics": ["elongating", "vertical emphasis", "linear"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["classic", "versatile", "timeless", "universal"],
+            "seasonal_relevance": ["all-season"],
+            "market_segment": ["all segments"],
+            "price_tier": "entry to premium",
+            "production_complexity": "low to medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel"],
+            "specific_applications": ["dress shirts", "casual wear", "suiting", "children's wear"],
+            "garment_types": ["shirts", "blouses", "trousers", "dresses"],
+            "fabric_hand": "varies with base weave"
+          },
+          "production_data": {
+            "estimated_production_time": "2-3 hours per 10 yards",
+            "thread_waste_percentage": 5,
+            "setup_time_minutes": "20-30",
+            "minimum_yardage": 15,
+            "cost_index": 1.05
+          },
+          "performance_metrics": {
+            "durability_rating": "varies with base",
+            "wrinkle_resistance": "varies with base",
+            "breathability": "varies with base",
+            "stretch_factor": "varies with base",
+            "care_complexity": "low to medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Universal pattern",
+            "designer_notes": "Works with any base weave. Stripe width and color combination create different effects.",
+            "inspiration_source": "Traditional striping",
+            "cultural_origin": "Multi-cultural",
+            "sustainability_score": "8-9",
+            "digital_trends": ["universal", "versatile", "timeless"]
+          },
+          "variations_available": [
+            {"variation_name": "Fine Stripes", "description": "Narrow lines"},
+            {"variation_name": "Medium Stripes", "description": "Standard width"},
+            {"variation_name": "Bold Stripes", "description": "Wide statement"},
+            {"variation_name": "Multi-Color Stripes", "description": "3+ colors"}
+          ]
+        },
+
+        {
+          "design_id": "SU_002_FLORAL_SMALL",
+          "design_name": "Small Floral Motif",
+          "category": "Surface / Motif Layer",
+          "subcategory": "Floral - Small",
+          "description": "Delicate small-scale floral pattern scattered across fabric surface, creating feminine and romantic appearance.",
+          "technical_specifications": {
+            "weave_type": "Any (print or jacquard overlay)",
+            "base_structure": "Plain or twill with floral pattern",
+            "peg_matrix": {
+              "description": "Small repeating floral elements"
+            },
+            "loom_setup": {
+              "shaft_count": "depends on base",
+              "threading_type": "standard",
+              "harness_required": false,
+              "dobby_compatible": true,
+              "jacquard_compatible": true
+            },
+            "thread_count": {
+              "warp_density": "60-100 epi",
+              "weft_density": "60-100 ppi"
+            },
+            "yarn_requirements": {
+              "warp": "base yarn",
+              "weft": "base yarn with print or color"
+            }
+          },
+          "design_properties": {
+            "pattern_repeat": {
+              "horizontal_inches": 0.5,
+              "vertical_inches": 0.5
+            },
+            "color_palette": ["multi-color on white", "pastels", "jewel-tones on dark"],
+            "texture_profile": ["delicate", "romantic", "subtle"],
+            "visual_characteristics": ["botanical", "romantic", "feminine"]
+          },
+          "market_positioning": {
+            "heritage_tags": ["romantic", "feminine", "delicate", "casual"],
+            "seasonal_relevance": ["spring", "summer"],
+            "market_segment": ["contemporary", "casual", "lifestyle"],
+            "price_tier": "entry to mid",
+            "production_complexity": "medium"
+          },
+          "applications": {
+            "primary_uses": ["apparel", "home-decor"],
+            "specific_applications": ["summer dresses", "blouses", "children's wear", "home textiles"],
+            "garment_types": ["dresses", "blouses", "casual wear", "accessories"],
+            "fabric_hand": "soft, flowing, romantic"
+          },
+          "production_data": {
+            "estimated_production_time": "2.5-3.5 hours per 10 yards",
+            "thread_waste_percentage": 6,
+            "setup_time_minutes": 30,
+            "minimum_yardage": 20,
+            "cost_index": 1.15
+          },
+          "performance_metrics": {
+            "durability_rating": "7-8",
+            "wrinkle_resistance": "5-6",
+            "breathability": "7-8",
+            "stretch_factor": "2",
+            "care_complexity": "medium"
+          },
+          "contextual_metadata": {
+            "created_date": "Traditional pattern",
+            "designer_notes": "Small scale works well for versatile applications. Color choice sets mood.",
+            "inspiration_source": "Botanical gardens and nature",
+            "cultural_origin": "European and Asian traditions",
+            "sustainability_score": "7-8",
+            "digital_trends": ["romantic", "casual", "feminine"]
+          },
+          "variations_available": [
+            {"variation_name": "Sparse Floral", "description": "Scattered arrangement"},
+            {"variation_name": "Dense Floral", "description": "Close pattern"},
+            {"variation_name": "Botanical Detailed", "description": "Realistic flowers"},
+            {"variation_name": "Stylized Floral", "description": "Simplified shapes"}
+          ]
+        }
+      ]
+    }
+  },
+
+  "summary_statistics": {
+    "total_designs": 87,
+    "category_breakdown": {
+      "basic_weaves": 10,
+      "twill_weaves": 18,
+      "satin_weaves": 8,
+      "dobby_designs": 28,
+      "jacquard_designs": 27,
+      "structural_weaves": 17,
+      "surface_motif": 24
+    },
+    "complexity_distribution": {
+      "low": 22,
+      "medium": 45,
+      "high": 20
+    },
+    "price_tier_distribution": {
+      "entry": 15,
+      "mid": 35,
+      "premium": 25,
+      "luxury": 12
+    }
+  },
+
+  "integration_guide": {
+    "api_usage": "This dataset can be integrated with Claude API for design generation, recommendations, and pattern matching",
+    "design_generation": "Use as seed data for AI-driven design variations and improvements",
+    "search_filtering": "Use heritage_tags, market_segment, and applications for intelligent search",
+    "cost_calculation": "Use cost_index for automated pricing and production estimates",
+    "recommendation_engine": "Use applications and design_properties for AI-powered recommendations",
+    "validation": "Verify peg_matrix and technical specifications before production"
+  },
+
+  "notes": {
+    "completeness": "This dataset provides comprehensive coverage of traditional and contemporary textile designs",
+    "extensibility": "Additional designs can be added following the same JSON schema",
+    "future_enhancement": "Implement design evolution feature using performance_metrics and digital_trends",
+    "ai_powered_features": "Dataset enables AI to suggest design variations, calculate costs, and provide user recommendations"
+  }
+}

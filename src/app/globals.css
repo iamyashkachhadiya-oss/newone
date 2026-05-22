@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  /* ── Background — clean white ─────────────────────────────── */
+  --bg:             #F5F5F7;
+  --bg-secondary:   #FAFAFA;
+  --surface:        #FFFFFF;
+  --surface-raised: #FFFFFF;
+
+  /* ── Brand Gradient — from FabricaAI logo ─────────────────── */
+  --grad-start:  #BA0C5D;            /* logo dark magenta */
+  --grad-mid:    #E0115F;            /* logo ruby pink */
+  --grad-end:    #FF4D94;            /* logo bright pink */
+  --gradient:    linear-gradient(135deg, #BA0C5D 0%, #E0115F 50%, #FF4D94 100%);
+
+  /* ── Primary Accent — Ruby Pink (Compile CTA only) ────────── */
+  --accent:        #E0115F;
+  --accent-hover:  #C00E52;
+  --accent-light:  rgba(224, 17, 95, 0.10);
+  --accent-ring:   rgba(224, 17, 95, 0.22);
+
+  /* ── Semantic Color Roles ────────────────────────────────── */
+  --clr-action:    #E0115F;  /* Primary CTA — Compile only */
+  --clr-export:    #0F766E;  /* Export PDF button */
+  --clr-export-h:  #0D6B65;  /* Export hover */
+  --clr-live:      #22C55E;  /* LIVE status dot */
+  --clr-demo:      #8E8E93;  /* DEMO mode badge */
+  --clr-warn:      #EA580C;  /* Cramming / tension warn */
+  --clr-select:    #6366F1;  /* Yarn/card selection border */
+  --clr-disabled:  #C7C7CC;  /* Disabled controls */
+  --clr-danger:    #DC2626;  /* Destructive actions */
+
+  /* ── Fonts ──────────────────────────────────────────────── */
+  --font-heading:  'DM Serif Display', Georgia, serif;
+
+  /* ── Warm surfaces ───────────────────────────────────────── */
+  --sidebar-bg:     #FDFCFB;  /* warm off-white sidebar */
+  --surface-warm:   #FAF9F8;
+
+  /* ── Secondary Accent — coral/orange (energy) ────────────── */
+  --accent2:       #FF6B35;
+  --accent2-light: rgba(255, 107, 53, 0.10);
+
+  /* ── Status ──────────────────────────────────────────────── */
+  --green:   #34C759;
+  --red:     #FF3B30;
+  --orange:  #FF9500;
+
+  /* ── Typography ──────────────────────────────────────────── */
+  --text-1:  #1D1D1F;
+  --text-2:  #6E6E73;
+  --text-3:  #86868B;
+  --text-4:  #AEAEB2;
+
+  /* ── Borders ─────────────────────────────────────────────── */
+  --border:        rgba(0, 0, 0, 0.10);
+  --border-light:  rgba(0, 0, 0, 0.06);
+  --border-focus:  #E0115F;
+
+  /* ── Radius ──────────────────────────────────────────────── */
+  --radius:     10px;
+  --radius-lg:  14px;
+  --radius-xl:  18px;
+  --radius-2xl: 22px;
+
+  /* ── Shadows ─────────────────────────────────────────────── */
+  --shadow-xs: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.10), 0 4px 12px rgba(0,0,0,0.06);
+
+  /* ── Fonts ───────────────────────────────────────────────── */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+
+  /* ── Input ───────────────────────────────────────────────── */
+  --input-h: 38px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-family: var(--font-body);
+  color: var(--text-1);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+/* ─── Inputs ─────────────────────────────────────────────────── */
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  height: var(--input-h);
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text-1);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+  letter-spacing: -0.01em;
+}
+
+textarea {
+  height: auto;
+  padding: 10px 12px;
+  resize: vertical;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.65;
+}
+
+input, select, textarea {
+  border-color: rgba(0,0,0,0.12) !important;
+  background: #FAFAFA !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background: #FFFFFF !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 3px var(--accent-ring) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-4);
+  font-weight: 400;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-2);
+  margin-bottom: 5px;
+  letter-spacing: -0.005em;
+}
+
+/* ─── Section Headers ────────────────────────────────────────── */
+
+.section-header {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+/* ─── Heading font utility ──────────────────────────────────── */
+.font-heading { font-family: var(--font-heading); }
+
+/* ─── Demo badge — muted status pill, NOT a CTA ─────────────── */
+.demo-badge {
+  padding: 3px 9px;
+  font-size: 9px; font-weight: 700;
+  color: var(--clr-demo);
+  background: transparent;
+  border: 1px solid #C7C7CC;
+  border-radius: 99px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: default;
+  user-select: none;
+}
+
+/* ─── Export button — teal (secondary CTA) ───────────────────── */
+.btn-export {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 12px;
+  background: var(--clr-export);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  letter-spacing: -0.01em;
+  box-shadow: 0 2px 10px rgba(15,118,110,0.25);
+  white-space: nowrap;
+}
+.btn-export:hover {
+  background: var(--clr-export-h);
+  box-shadow: 0 4px 16px rgba(15,118,110,0.35);
+  transform: translateY(-1px);
+}
+.btn-export:disabled {
+  background: transparent;
+  color: var(--clr-disabled);
+  border: 1px solid var(--clr-disabled);
+  opacity: 0.7;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* ─── Buttons ────────────────────────────────────────────────── */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 18px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  letter-spacing: -0.01em;
+  box-shadow: 0 2px 10px var(--accent-light);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 18px var(--accent-ring);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 16px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  letter-spacing: -0.01em;
+}
+
+.btn-accent:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 4px 14px rgba(6,196,154,0.30);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 14px;
+  background: rgba(0,0,0,0.05);
+  color: var(--text-1);
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-secondary:hover  { background: rgba(0,0,0,0.09); }
+.btn-secondary:active { background: rgba(0,0,0,0.13); }
+
+/* ─── Pill / Segmented Control ───────────────────────────────── */
+
+.pill-group {
+  display: inline-flex;
+  background: rgba(0,0,0,0.06);
+  border-radius: 9px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.pill-btn {
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-body);
+  border: none;
+  background: transparent;
+  color: var(--text-2);
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.15s ease;
+  letter-spacing: -0.01em;
+}
+
+.pill-btn.active {
+  background: var(--surface);
+  color: var(--text-1);
+  box-shadow: var(--shadow-xs);
+  font-weight: 600;
+}
+
+/* ─── Cards ──────────────────────────────────────────────────── */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease;
+  overflow: visible;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .card { padding: 16px; }
+}
+
+@media (min-width: 768px) {
+  .card { padding: 18px; }
+}
+
+.card:hover { box-shadow: var(--shadow-md); }
+
+/* ─── Sidebar Form Content — compact density for 252px sidebar ──────────── */
+/* These override the inline styles in LoomForm / WarpSystemForm / etc       */
+
+.sidebar-form-content h2 {
+  font-size: 14px !important;
+  letter-spacing: -0.025em !important;
+  margin-bottom: 2px !important;
+}
+
+.sidebar-form-content > * > p,
+.sidebar-form-content h2 + p {
+  font-size: 11px !important;
+}
+
+/* Section title dividers (used as ParamGroup heading) */
+.sidebar-form-content [style*="textTransform: 'uppercase'"],
+.sidebar-form-content [style*="text-transform: uppercase"] {
+  font-size: 10px !important;
+}
+
+/* Form labels inside sidebar */
+.sidebar-form-content label {
+  font-size: 11px !important;
+  margin-bottom: 4px !important;
+}
+
+/* Inputs and selects — compact but not cramped */
+.sidebar-form-content input:not([type='range']):not([type='checkbox']):not([type='color']),
+.sidebar-form-content select,
+.sidebar-form-content textarea {
+  height: 34px !important;
+  font-size: 12px !important;
+  padding: 0 9px !important;
+}
+
+/* Reduce ParamGroup bottom gaps */
+.sidebar-form-content [style*="marginBottom: 20"] {
+  margin-bottom: 14px !important;
+}
+
+
+/* ─── Metric Cards ───────────────────────────────────────────── */
+
+.metric-card {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.metric-card:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(6,196,154,0.25);
+}
+
+/* ─── Tab System ─────────────────────────────────────────────── */
+
+.tab-bar {
+  display: flex;
+  border-bottom: 1px solid var(--border-light);
+  gap: 0;
+}
+
+.tab-btn {
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-3);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  font-family: var(--font-body);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.tab-btn:hover  { color: var(--text-1); }
+.tab-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
+/* ─── Form Group Title ───────────────────────────────────────── */
+
+.form-group-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 10px;
+}
+
+/* ─── Range Slider ───────────────────────────────────────────── */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px !important;
+  border-radius: 99px;
+  background: rgba(0,0,0,0.10) !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 0.5px solid rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.1); }
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 4px var(--accent-ring), 0 2px 6px rgba(0,0,0,0.18);
+}
+
+/* ─── Glassmorphism ──────────────────────────────────────────── */
+
+.glass {
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* ─── Gradient Text Utility ──────────────────────────────────── */
+
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────── */
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.15);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(224,17,95,0.30); }
+
+/* ─── Collapsible ────────────────────────────────────────────── */
+
+.collapsible-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px 0;
+  user-select: none;
+  transition: color 0.15s;
+}
+
+.collapsible-header:hover { color: var(--accent); }
+
+/* ─── Stepper ───────────────────────────────────────────────── */
+.stepper-dot {
+  width: 22px; height: 22px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; font-weight: 700;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+.stepper-dot.complete {
+  background: var(--accent); color: #fff; border: none;
+}
+.stepper-dot.active {
+  background: transparent; color: var(--accent);
+  border: 2.5px solid var(--accent);
+}
+.stepper-dot.idle {
+  background: transparent; color: #AEAEB2;
+  border: 1.5px solid #D1D1D6;
+}
+.stepper-line {
+  flex: 1; height: 1.5px; margin-bottom: 12px;
+  transition: background 0.3s ease;
+}
+
+/* ─── Animations ─────────────────────────────────────────────── */
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+.pulse-indicator { animation: pulse-dot 2.4s ease-in-out infinite; }
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes compile-weave {
+  0%   { opacity: 0.3; transform: scale(0.8); }
+  50%  { opacity: 1;   transform: scale(1.05); }
+  100% { opacity: 0.3; transform: scale(0.8); }
+}
+.compile-weave-cell { animation: compile-weave 0.8s ease-in-out infinite alternate; }
+
+@keyframes modal-in {
+  0%   { opacity: 0; transform: scale(0.94) translateY(10px); }
+  60%  { opacity: 1; transform: scale(1.01) translateY(-2px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px) translateX(-50%); }
+  to   { opacity: 1; transform: translateY(0)    translateX(-50%); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes notchDropIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(-6px) scale(0.97); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0)    scale(1);    }
+}
+
+/* ─── Mobile Utilities ───────────────────────────────────────── */
+
+/* Hide scrollbar but keep scrolling (for pill/tab scroll on mobile) */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@media (max-width: 640px) {
+  /* Compact inputs on mobile */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    height: 36px !important;
+    font-size: 16px !important; /* prevent iOS zoom */
+  }
+
+  /* Compact section headers */
+  .section-header { font-size: 10px; margin-bottom: 10px; }
+
+  /* Metric cards smaller on mobile */
+  .metric-card { padding: 10px 12px; }
+
+  /* Tab buttons easier to tap */
+  .tab-btn { padding: 10px 12px; font-size: 12px; }
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+button { font-family: var(--font-body); }
